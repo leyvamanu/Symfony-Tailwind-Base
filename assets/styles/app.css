@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .button {
+        @apply h-10 px-5 m-2 text-green-100 transition-colors duration-150 bg-green-700 rounded-lg hover:bg-green-800
+            font-bold text-2xl;
+    }
+}
