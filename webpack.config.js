@@ -73,6 +73,16 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
+
+    //liveReload
+    .configureDevServerOptions((options) => {
+        options.liveReload = true;
+        options.hot = true;
+        options.watchFiles = [
+            './templates/**/*',
+            './src/**/*'
+        ]
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();
