@@ -3,10 +3,14 @@
         "@hotwired/stimulus": "^3.0.0",
         "@symfony/stimulus-bridge": "^3.0.0",
         "@symfony/webpack-encore": "^1.7.0",
+        "browser-sync": "^2.27.7",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "core-js": "^3.0.0",
         "postcss-loader": "^6.2.1",
         "regenerator-runtime": "^0.13.2",
-        "webpack-notifier": "^1.6.0"
+        "webpack-livereload-plugin": "^3.0.2",
+        "webpack-notifier": "^1.6.0",
+        "webpack-watch-files-plugin": "^1.2.0"
     },
     "license": "UNLICENSED",
     "private": true,
@@ -14,7 +18,9 @@
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",
-        "build": "encore production --progress"
+        "build": "encore production --progress",
+        "sync": "browser-sync start --config bs-config.js",
+        "sync2": "webpack --watch"
     },
     "dependencies": {
         "autoprefixer": "^10.4.2",
